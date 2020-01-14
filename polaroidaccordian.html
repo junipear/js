@@ -1,0 +1,193 @@
+<html>
+<head>
+<style>
+
+    body {
+        background-color: #debcab;
+        width: 1200px;
+        text-align:center;
+        margin:auto;
+    }
+    .fortyRow {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .forty {
+        margin:auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        }
+    .fortyOne {
+        margin:auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .accordion {
+      background-color: #693F2D;
+      color: #fff;
+      cursor: pointer;
+      width: 100%; 
+      font-size: 1.2em;
+      transition: 0.4s;
+      text-align: left;
+      text-transform:initial;
+    }
+    
+    .activeA, .accordion:hover {
+     background-color: #CE966D;
+       color:#fff;
+      overflow: visible;
+    }
+    
+    .accordion:after {
+      content: '\002B';
+      color: #fff;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+      overflow: visible;
+    }
+    
+    .dropDownPanel {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    
+    .panelRow {
+        margin:auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    /*clear floats after colums*/
+    .panelRow:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .paragraph {
+        float: left;
+        text-align: left;
+        margin-top: 6px;
+        padding:5px 5px 10px 5px;
+        
+    }
+    
+    .helpTopics {
+        font-size: 2em;
+        padding-top:50px;
+        clear:both;
+    }
+    
+    .quickLinks {
+        float:left;
+        width:50%;
+        list-style: none;
+    }
+    
+    .qLBtn {
+        width:60%;
+        text-transform:initial;
+        overflow: visible;
+    }
+    
+    .qLBtn a {
+        text-decoration: none;
+        color:#fff;
+        overflow: visible;
+    }
+    
+    .qLBtn a:hover {
+        color: #CE966D;
+        transition: 0.2s ease-out;
+        overflow: visible;
+    }
+    
+    .polaroid {
+        width: 27%;
+        float:left;
+        background-color: white;
+        margin:3%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    
+    .slide {
+        text-align: center;
+        padding: 10px 20px;
+        }
+    
+    
+    </style>
+    
+</head>
+<body>
+            
+            <h3 class="helpTopics" style="float:clear;">Your Support Team</h3>
+            <div style="padding-bottom: 50px; text-align: center">
+                <div style="display:inline-block;">
+                <div class="polaroid">
+                    <img src="https://images.theconversation.com/files/126820/original/image-20160615-14016-njqw65.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" alt="" style="width:100%;">
+                    <div class="slide">
+                    <p>Ms. Java Cuppa<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img src="https://images.theconversation.com/files/126820/original/image-20160615-14016-njqw65.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" alt="" style="width:100%;">
+                    <div class="slide">
+                    <p>Ms. Java Cuppa<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img src="https://images.theconversation.com/files/126820/original/image-20160615-14016-njqw65.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" alt="" style="width:100%;">
+                    <div class="slide">
+                    <p>Ms. Java Cuppa<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+            <h3 class="helpTopics">Help Topics & Frequently Asked Questions</h3>
+            <button class="accordion">How can I get a quote from Aramsco?</button><div class="panelRow dropDownPanel"><p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">What are free freight qualifiers?</button><div class="panelRow dropDownPanel"><p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">Process for Aramsco to recognize your tax exemption status?</button><div class="panelRow dropDownPanel"><p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+            <button class="accordion">What are some options for buying online?</button><div class="panelRow dropDownPanel"><p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">What are some free shipping options?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">Does Aramsco do price matching?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">How do I cancel an order?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">Who can I ask questions about Aramsco's tool and equipment rentals?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">Does Aramsco offer financing for tools, equipment, and supplies?</button><div class="panelRow dropDownPanel"><p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">What is Aramsco's shipping policy?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+            <button class="accordion">How can I return products?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+            <button class="accordion">How do I enroll in the continuing education through Aramsco?</button><div class="panelRow dropDownPanel"> <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+                
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("activeA");
+            var dropDownPanel = this.nextElementSibling;
+            if (dropDownPanel.style.maxHeight){
+              dropDownPanel.style.maxHeight = null;
+            } else {
+              dropDownPanel.style.maxHeight = dropDownPanel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+    
+    
+</body>
+</html>
